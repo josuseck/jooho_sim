@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "발주 자동화 - 세트 반영",
+  "description": "세트 판매 시 커버와 충전재 각각 발주되도록 수정\n- 발주 자동화 로직 확인 (app/cx/order-automation 등)\n- 세트 바코드 판매 시 set_composition 참조\n- 커버 바코드 + 충전재 바코드 각각 발주 생성\n- 출고 데이터 업로드 세트 분해 완료 후 작업",
+  "activeForm": "발주 자동화 세트 반영 중",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

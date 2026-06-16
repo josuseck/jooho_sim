@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "출고 데이터 업로드 - 세트 분해 기능 추가",
+  "description": "세트 바코드가 업로드되면 커버 + 충전재로 분해해서 집계\n- app/api/sales/upload/route.ts 수정\n- set_composition 테이블에서 세트 구성품 조회\n- 방석 세트: 커버 + 충전재 (LE101K1000001)\n- 펫쿠션 Large: 커버 + 충전재 (LE201K1000001)\n- 펫쿠션 Medium: 커버 + 충전재 (LE201K1000002)\n- set_composition 테이블 구성품 정보 정비 필요",
+  "activeForm": "세트 분해 기능 추가 중",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

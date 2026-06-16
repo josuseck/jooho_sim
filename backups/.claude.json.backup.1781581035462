@@ -1,0 +1,1054 @@
+{
+  "numStartups": 165,
+  "installMethod": "global",
+  "hasSeenTasksHint": true,
+  "tipsHistory": {
+    "new-user-warmup": 7,
+    "plan-mode-for-complex-tasks": 165,
+    "memory-command": 152,
+    "theme-command": 163,
+    "status-line": 152,
+    "prompt-queue": 1,
+    "enter-to-steer-in-relatime": 164,
+    "todo-list": 164,
+    "install-github-app": 165,
+    "install-slack-app": 165,
+    "drag-and-drop-images": 165,
+    "paste-images-mac": 157,
+    "double-esc-code-restore": 157,
+    "continue": 157,
+    "shift-tab": 157,
+    "image-paste": 164,
+    "desktop-app": 76,
+    "web-app": 152,
+    "mobile-app": 61,
+    "guest-passes": 165,
+    "overage-promo": 4,
+    "frontend-design-plugin": 157,
+    "shift-enter": 157,
+    "custom-agents": 156,
+    "agent-flag": 66,
+    "permissions": 165,
+    "rename-conversation": 165,
+    "custom-commands": 165,
+    "feedback-command": 153,
+    "default-permission-mode-config": 93,
+    "color-when-multi-clauding": 165,
+    "vercel-plugin": 126,
+    "git-worktrees": 165,
+    "desktop-shortcut": 152,
+    "overage-credit": 66,
+    "voice-mode": 162,
+    "remote-control": 152,
+    "goal-command-nudge": 154,
+    "team-onboarding-share": 116,
+    "auto-copy-config-hint": 121,
+    "fotw-campaign-upsell": 147
+  },
+  "promptQueueUseCount": 301,
+  "cachedGrowthBookFeatures": {
+    "tengu_desktop_upsell_v2": {
+      "enabled": false
+    },
+    "tengu_nimble_amber_prose": false,
+    "tengu_workflows_enabled": true,
+    "tengu_worktree_mode": true,
+    "tengu_blue_coaster": false,
+    "tengu_walnut_prism": false,
+    "tengu_cork_lantern": false,
+    "tengu_cobalt_compass": true,
+    "tengu_cobalt_wren": false,
+    "tengu_kairos_push_notifications": true,
+    "tengu_timber_lark": "copy_a",
+    "tengu_dune_wren": false,
+    "tengu_mcp_singleton_unwrap": true,
+    "tengu_cobalt_plinth": false,
+    "tengu_gleaming_fair": true,
+    "tengu_ultraplan_config": {
+      "enabled": true
+    },
+    "tengu_ochre_hollow": false,
+    "tengu_copper_thistle": false,
+    "tengu_c4w_usage_limit_notifications_enabled": true,
+    "tengu_basalt_sundial": false,
+    "tengu_quiet_harbor": false,
+    "tengu_chert_bezel": true,
+    "tengu_mint_lanes": false,
+    "tengu_ccr_bridge": true,
+    "tengu_event_sampling_config": {},
+    "tengu_negative_interaction_transcript_ask_config": {
+      "probability": 0
+    },
+    "tengu_slim_subagent_claudemd": true,
+    "tengu_silk_hinge": false,
+    "tengu_pewter_summit": true,
+    "tengu_quartz_vireo": "",
+    "tengu_satin_quoll": {},
+    "tengu_slate_meadow": true,
+    "tengu_grey_step2": {
+      "enabled": true,
+      "dialogTitle": "We recommend medium effort for Opus",
+      "dialogDescription": "Effort determines how long Claude thinks for when completing your task. We recommend medium effort for most tasks to balance speed and intelligence and maximize rate limits. Use ultrathink to trigger high effort when needed."
+    },
+    "tengu_malformed_tool_use_clean_retry": false,
+    "tengu_birthday_hat": false,
+    "tengu_amber_flint": true,
+    "tengu_agent_list_attach": true,
+    "tengu_mcp_elicitation": true,
+    "tengu_cinder_plover": "",
+    "tengu_osprey_lantern": false,
+    "tengu_marble_lark": false,
+    "tengu_sotto_voce": true,
+    "tengu_copper_fox": false,
+    "tengu_byte_stream_idle_timeout_ms": 180000,
+    "tengu_saffron_lattice": {
+      "enabled": false,
+      "planLimitsEndDate": "2026-06-22T10:00:00Z",
+      "hideRateLimitsDescription": true
+    },
+    "tengu_hawthorn_steeple": false,
+    "tengu_marble_whisper": true,
+    "tengu_velvet_ibis": {},
+    "tengu_swann_brevity": "focused",
+    "tengu_flax_grouse": false,
+    "tengu_plugin_official_mkt_git_fallback": true,
+    "tengu_walrus_canteen": false,
+    "tengu_amber_rokovoko": 0.2,
+    "tengu_bad_survey_transcript_ask_config": {
+      "probability": 1
+    },
+    "tengu_gha_plugin_code_review": false,
+    "tengu_billiard_aviary": false,
+    "tengu_loud_sugary_rock": false,
+    "tengu_orchid_mantis_v2": false,
+    "tengu_sm_config": {
+      "minimumMessageTokensToInit": 150000,
+      "minimumTokensBetweenUpdate": 40000,
+      "toolCallsBetweenUpdates": 10
+    },
+    "tengu_streaming_tool_execution2": true,
+    "tengu_ultraplan_timeout_seconds": 5400,
+    "tengu_kairos_loop_dynamic": true,
+    "tengu_cedar_sundial": false,
+    "tengu_code_diff_cli": true,
+    "tengu_herring_clock": false,
+    "tengu_marble_whisper2": true,
+    "tengu_bridge_repl_v2": true,
+    "tengu_tern_alloy": "copy_a",
+    "tengu_classifier_disabled_surfaces": "",
+    "tengu_brick_follow": false,
+    "tengu_amber_lynx": false,
+    "tengu_tool_search_unsupported_models": [
+      "claude-3-5-haiku",
+      "claude-3-haiku"
+    ],
+    "tengu_harbor_willow": false,
+    "tengu_penguins_enabled": true,
+    "tengu_saffron_anchor": true,
+    "tengu_amber_sentinel": true,
+    "tengu_snippet_save": false,
+    "tengu_collage_kaleidoscope": true,
+    "tengu_vscode_feedback_survey": true,
+    "claude_code_skills_dashboard_enabled_cli": false,
+    "tengu_olive_hinge": "",
+    "tengu_bridge_repl_v2_config": {
+      "init_retry_max_attempts": 3,
+      "init_retry_base_delay_ms": 500,
+      "init_retry_jitter_fraction": 0.25,
+      "init_retry_max_delay_ms": 4000,
+      "http_timeout_ms": 10000,
+      "uuid_dedup_buffer_size": 2000,
+      "heartbeat_interval_ms": 20000,
+      "heartbeat_jitter_fraction": 0.1,
+      "token_refresh_buffer_ms": 600000,
+      "teardown_archive_timeout_ms": 1500,
+      "connect_timeout_ms": 15000,
+      "min_version": "2.1.70",
+      "should_show_app_upgrade_message": false
+    },
+    "tengu_willow_refresh_ttl_hours": 0,
+    "tengu_read_dedup_killswitch": true,
+    "tengu_bramble_lintel": 7,
+    "tengu_sedge_lantern": true,
+    "tengu_hawthorn_window": 200000,
+    "tengu_ultraplan_prompt_identifier": "visual_plan",
+    "tengu_quartz_heron": false,
+    "tengu_chair_sermon": false,
+    "tengu_maple_sundial": false,
+    "tengu_fennel_kite": false,
+    "tengu_miraculo_the_bard": false,
+    "tengu_hazel_osprey": false,
+    "tengu_prompt_cache_1h_config": {
+      "allowlist": [
+        "repl_main_thread*",
+        "sdk",
+        "auto_mode",
+        "rolling_compact",
+        "memdir_relevance",
+        "agent_classifier",
+        "prompt_suggestion",
+        "away_summary",
+        "extract_memories",
+        "compact"
+      ]
+    },
+    "tengu_claudeai_mcp_connectors": true,
+    "tengu_harbor_ledger": [
+      {
+        "marketplace": "claude-plugins-official",
+        "plugin": "discord"
+      },
+      {
+        "marketplace": "claude-plugins-official",
+        "plugin": "telegram"
+      },
+      {
+        "marketplace": "claude-plugins-official",
+        "plugin": "fakechat"
+      },
+      {
+        "marketplace": "claude-plugins-official",
+        "plugin": "imessage"
+      }
+    ],
+    "tengu_tool_pear": false,
+    "tengu_sage_compass": {},
+    "tengu_idle_amber_finch": false,
+    "tengu_fgts": true,
+    "tengu_slate_nexus": true,
+    "tengu_bridge_min_version": {
+      "minVersion": "2.1.70"
+    },
+    "tengu_cobalt_raccoon": true,
+    "tengu_kairos_input_needed_push": true,
+    "tengu_vellum_lantern": false,
+    "tengu_basalt_spur": false,
+    "tengu_silent_harbor": false,
+    "tengu_velvet_cascade": {},
+    "tengu_plank_river_frost": "user_intent",
+    "tengu-top-of-feed-tip": {
+      "tip": "Claude Fable 5 is currently unavailable. Please use Opus 4.8 or another available model. Learn more: https://www.anthropic.com/news/fable-mythos-access",
+      "color": "warning"
+    },
+    "tengu_ladder_mq7": false,
+    "tengu-off-switch": {
+      "activated": false
+    },
+    "tengu_otk_slot_v1": false,
+    "tengu_sub_nomdrep_q7k": true,
+    "tengu_marble_sandcastle": false,
+    "tengu_sage_compass2": {
+      "enabled": true
+    },
+    "tengu_ccr_bridge_multi_session": true,
+    "tengu_velvet_moth": 0.2,
+    "tengu_pewter_ledger": "OFF",
+    "tengu_jade_anvil_4": false,
+    "tengu_harbor": true,
+    "tengu_mcp_subagent_prompt": false,
+    "tengu_immediate_model_command": false,
+    "tengu_surreal_dali": true,
+    "tengu_marble_anvil": true,
+    "tengu_tide_elm": "off",
+    "tengu_ccr_bundle_max_bytes": 104857600,
+    "tengu_willow_census_ttl_hours": 24,
+    "tengu_trace_lantern": false,
+    "tengu_kairos_cron_durable": false,
+    "tengu_log_datadog_events": true,
+    "tengu_review_bughunter_config": {
+      "fleet_size": 5,
+      "max_duration_minutes": 10,
+      "agent_timeout_seconds": 600,
+      "total_wallclock_minutes": 22,
+      "model": "claude-opus-4-7",
+      "cost_note": "$5-$25",
+      "duration_note": "~5-10 min",
+      "enabled": true
+    },
+    "tengu_harbor_prism": true,
+    "tengu_slate_harbor_experiment": false,
+    "tengu_lantern_spool": false,
+    "tengu_flint_harbor_share": false,
+    "tengu_compass_dial": true,
+    "tengu_ccr_bundle_seed_enabled": true,
+    "tengu_pewter_lark": "off",
+    "tengu_copper_bridge": true,
+    "tengu_prism_ledger": false,
+    "tengu_auto_mode_default_on": false,
+    "tengu_coral_beacon": true,
+    "tengu_frond_boric": {},
+    "tengu_bridge_requires_action_details": true,
+    "tengu_basalt_meadow": true,
+    "tengu-fable-off-switch": {
+      "activated": false
+    },
+    "tengu_scarf_coffee": false,
+    "tengu_cobalt_lantern": true,
+    "tengu_flint_harbor": false,
+    "tengu_max_version_config": {},
+    "tengu_sparrow_ledger": false,
+    "tengu_plum_vx3": true,
+    "tengu_shining_fractals": false,
+    "tengu_alder_compass": false,
+    "tengu_system_prompt_global_cache": true,
+    "tengu_cobalt_ridge": true,
+    "tengu_lapis_anchor": "off",
+    "tengu_cinder_almanac": true,
+    "tengu_cedar_plume": false,
+    "tengu_cobalt_heron": false,
+    "tengu_tussock_oriole": false,
+    "tengu_compact_cache_prefix": true,
+    "tengu_flint_harbor_prompt": {
+      "prompt": "You are helping a power user generate an onboarding guide for teammates who are new to Claude Code. The guide will live in the team's onboarding docs and can be pasted into Claude for an interactive walkthrough.\n\nYou're co-authoring this with them — collaborative and helpful, like a teammate who's done this before and is happy to share.\n\n## Usage data (last {{WINDOW_DAYS}} days)\n\nThis was scanned from the guide creator's local Claude Code transcripts:\n\n```json\n{{USAGE_DATA}}\n```\n\n## Your task\n\nBefore anything else — including before thinking through the classification — output exactly this line as your first visible text:\n\n> Looking at how you've used Claude over the last {{WINDOW_DAYS}} days to put together an onboarding guide for teammates new to Claude Code.\n\nThis must come before any extended thinking about session descriptors. The guide creator is staring at a blank screen until you do. Classification is step 2, not step 1.\n\nGenerate the guide immediately, then ask for revisions. Don't wait for answers first — it's easier for the guide creator to edit a concrete draft than answer abstract questions.\n\n1. **Output the acknowledgment line above.** No thinking, no classification, no tool calls before this. One line, then move on.\n\n2. **Derive the work-type breakdown.** Read the `sessionDescriptors` array — each entry describes one session via its title, any linked code reviews (`prNumbers`), and first user message. Classify each session into one of these task types:\n\n   - **build_feature** — new functionality, scripts, tools, config/CI/env setup\n   - **debug_fix** — investigating and fixing bugs\n   - **improve_quality** — refactoring, tests, cleanup, code review\n   - **analyze_data** — queries, metrics, number crunching\n   - **plan_design** — architecture, approach, strategy, understanding unfamiliar code, design review\n   - **prototype** — spikes, POCs, throwaway exploration\n   - **write_docs** — PRDs, RFCs, READMEs, design docs, copy/doc review\n\n   Categories describe the *type of task*, not the project or domain — a teammate on any project should recognize them. Review sessions belong with whatever's being reviewed: code review is improve_quality, doc review is write_docs, design review is plan_design. Most sessions fit the list; only invent a new category if it's genuinely a different type of task. Pick the top 3-5 with rough percentages. First messages alone are usually enough; titles and code-review links are enrichment. If first messages are uninformative, use tool and MCP counts as a weak hint. If there are ~0 sessions, leave the breakdown as a TODO.\n\n   In the rendered guide, display categories with spaces and title case (e.g. \"Build Feature\" not \"build_feature\").\n\n3. **Gather the remaining pieces.** For repos, start with `currentRepo` and check the workspace for sibling repo directories. For MCP server setup, use each entry's `name` (and `urlOrigin` where present) to infer what the server does and how a teammate would get access. Leave the Team Tips and Get Started sections as TODO placeholders — you'll ask for these in Review and fill them in after.\n\n4. **Write the guide to `ONBOARDING.md`** following this template:\n\n```\n{{GUIDE_TEMPLATE}}\n```\n\n   Fill in real numbers from the usage data (not placeholders). Use `generatedBy` for the name; if it's missing, omit the name. Ascii bar charts: `█` for filled, `░` for empty, 20 chars wide. Keep the HTML comment instruction at the bottom exactly as shown.\n\n5. **Render the guide in a code block, then close out the first turn.** You're co-authoring this guide with the guide creator — frame the follow-up as collaboration, not corrections.\n\n   After the code block, add a `---` horizontal rule and a `**Review**` heading so the guide is visually separated from your questions. Under the heading, number these three questions:\n\n   1. \"I went with '[X]' for the team name — let me know if that sounds right.\" (or if you couldn't tell: \"What's the team name? I'll add it in.\")\n   2. Is there a starter task for someone new to Claude Code? (ticket or doc link — optional)\n   3. Any team tips you'd tell a new teammate that aren't already in CLAUDE.md?\n\n   After they answer, update `ONBOARDING.md` with their team name, tips, and starter task. Then close with this exact line (not numbered, not paraphrased):\n\n   Saved to `ONBOARDING.md`. Drop it in your team docs and channels — when a new teammate pastes it into Claude Code, they get a guided onboarding tour from there.\n\n   Apply any edits they come back with to the file.",
+      "guideTemplate": "# Welcome to [Team Name]\n\n## How We Use Claude\n\nBased on [name]'s usage over the last [N] days:\n\nWork Type Breakdown:\n  [Category 1]  [ascii bar]  [N]%\n  [Category 2]  [ascii bar]  [N]%\n  [Category 3]  [ascii bar]  [N]%\n  ...\n\nTop Skills & Commands:\n  [/command]  [ascii bar]  [N]x/month\n  ...\n\nTop MCP Servers:\n  [Server]  [ascii bar]  [N] calls\n  ...\n\n## Your Setup Checklist\n\n### Codebases\n- [ ] [repo-name] — [repo url]\n...\n\n### MCP Servers to Activate\n- [ ] [Server] — [what it's for]. [How to get access]\n...\n\n### Skills to Know About\n- [/command] — [what it does, when the team uses it]\n...\n\n## Team Tips\n\n_TODO_\n\n## Get Started\n\n_TODO_\n\n<!-- INSTRUCTION FOR CLAUDE: A new teammate just pasted this guide for how the\nteam uses Claude Code. You're their onboarding buddy — warm, conversational,\nnot lecture-y.\n\nOpen with a warm welcome — include the team name from the title. Then: \"Your\nteammate uses Claude Code for [list all the work types]. Let's get you started.\"\n\nCheck what's already in place against everything under Setup Checklist\n(including skills), using markdown checkboxes — [x] done, [ ] not yet. Lead\nwith what they already have. One sentence per item, all in one message.\n\nTell them you'll help with setup, cover the actionable team tips, then the\nstarter task (if there is one). Offer to start with the first unchecked item,\nget their go-ahead, then work through the rest one by one.\n\nAfter setup, walk them through the remaining sections — offer to help where you\ncan (e.g. link to channels), and just surface the purely informational bits.\n\nDon't invent sections or summaries that aren't in the guide. The stats are the\nguide creator's personal usage data — don't extrapolate them into a \"team\nworkflow\" narrative. -->",
+      "windowDays": 30
+    },
+    "tengu_kestrel_arch": "OFF",
+    "tengu-model-error-overrides": {
+      "claude-fable-5": {
+        "block": "Claude Fable 5 is currently unavailable. Learn more: https://www.anthropic.com/news/fable-mythos-access"
+      }
+    },
+    "tengu_mcp_retry_failed_remote": false,
+    "tengu_willow_sentinel_ttl_hours": 1,
+    "tengu_cork_m4q": true,
+    "tengu_penguin_mode_promo": {
+      "discountPercent": 0,
+      "endDate": "Feb 16"
+    },
+    "tengu_desktop_upsell": {
+      "enable_shortcut_tip": true,
+      "enable_startup_dialog": false
+    },
+    "tengu_steady_lantern": false,
+    "tengu_cobalt_thicket": false,
+    "tengu_classifier_summary_heuristic_emit": true,
+    "tengu_amber_heron": false,
+    "tengu_fg_left_arrow_agents": true,
+    "tengu_noreread_q7m_velvet": false,
+    "tengu_ember_trail": "0",
+    "tengu_scratch": false,
+    "tengu_sessions_elevated_auth_enforcement": true,
+    "tengu_cedar_inlet": "step",
+    "tengu_amber_lark": false,
+    "tengu_shale_finch": true,
+    "tengu_cedar_halo": false,
+    "tengu_cedar_hollow_7m": {},
+    "tengu_auto_mode_config": {
+      "enabled": "enabled",
+      "twoStageClassifier": true
+    },
+    "tengu_mcp_stateless_skip_init": true,
+    "tengu_native_cursor": true,
+    "tengu_slate_moth": false,
+    "tengu_lapis_finch": true,
+    "tengu_slate_siskin": {
+      "enabled": false,
+      "timeoutMs": 8000,
+      "throttleMs": 30000,
+      "summaryLineThreshold": 5
+    },
+    "tengu_skills_dashboard_enabled": false,
+    "tengu_gypsum_kite": false,
+    "tengu_pewter_kestrel": {
+      "global": 50000,
+      "Bash": 30000,
+      "PowerShell": 30000,
+      "Grep": 20000,
+      "Snip": 1000,
+      "StrReplaceBasedEditTool": 30000,
+      "BashSearchTool": 20000
+    },
+    "tengu_moth_copse": false,
+    "tengu_vscode_review_upsell": false,
+    "tengu_lichen_compass": false,
+    "tengu_coral_fern": false,
+    "tengu_turtle_carbon": true,
+    "tengu_red_coaster": false,
+    "tengu_mocha_barista": true,
+    "tengu_orchid_mantis": false,
+    "tengu_bridge_attestation_enforce": false,
+    "tengu_amber_sextant": true,
+    "tengu_vscode_onboarding": false,
+    "tengu_startup_notice": "",
+    "tengu_sepia_cormorant": [],
+    "tengu_umber_petrel": false,
+    "tengu_bridge_attestation_enforce_config": {
+      "accept_level": "VERIFIED_BY_GATE",
+      "accept_statuses": []
+    },
+    "tengu_bridge_poll_interval_ms": 0,
+    "tengu_bg_attach_stall_ms": 5000,
+    "tengu_feature_template": false,
+    "tengu_passport_quail": false,
+    "tengu_cedar_lantern": true,
+    "tengu_mcp_local_oauth_blocked_hosts": {
+      "hosts": [
+        "microsoft365.mcp.claude.com",
+        "gmail.mcp.claude.com",
+        "gcal.mcp.claude.com"
+      ]
+    },
+    "tengu_hazel_osprey_floor": 75000,
+    "tengu_pewter_brook": false,
+    "tengu_prompt_cache_diagnostics": true,
+    "tengu_reactive_compact_remote": false,
+    "tengu_doorbell_agave": false,
+    "tengu_malort_pedway": {
+      "enabled": true,
+      "pixelValidation": false,
+      "clipboardPasteMultiline": true,
+      "screenshotFilter": true,
+      "mouseAnimation": true,
+      "hideBeforeAction": true,
+      "autoTargetDisplay": false,
+      "coordinateMode": "pixels"
+    },
+    "tengu_maple_tide": false,
+    "tengu_moss_anchor": false,
+    "tengu_slate_ribbon": true,
+    "tengu_prompt_suggestion": true,
+    "tengu_amber_redwood2": "",
+    "tengu_amber_lattice": {
+      "plugins": [
+        "security-guidance",
+        "code-review",
+        "commit-commands",
+        "code-simplifier",
+        "hookify",
+        "feature-dev",
+        "frontend-design",
+        "pr-review-toolkit",
+        "skill-creator",
+        "plugin-dev",
+        "agent-sdk-dev",
+        "mcp-server-dev",
+        "claude-code-setup",
+        "claude-md-management",
+        "playground",
+        "ralph-loop",
+        "explanatory-output-style",
+        "learning-output-style",
+        "clangd-lsp",
+        "csharp-lsp",
+        "gopls-lsp",
+        "jdtls-lsp",
+        "kotlin-lsp",
+        "lua-lsp",
+        "php-lsp",
+        "pyright-lsp",
+        "ruby-lsp",
+        "rust-analyzer-lsp",
+        "swift-lsp",
+        "typescript-lsp"
+      ]
+    },
+    "tengu_feedback_survey_config": {
+      "minTimeBeforeFeedbackMs": 600000,
+      "minTimeBetweenFeedbackMs": 43200000,
+      "minTimeBetweenGlobalFeedbackMs": 43200000,
+      "minUserTurnsBeforeFeedback": 5,
+      "minUserTurnsBetweenFeedback": 25,
+      "hideThanksAfterMs": 3000,
+      "onForModels": [
+        "*"
+      ],
+      "probability": 0.05
+    },
+    "tengu_kairos_loop_prompt": true,
+    "tengu_ccr_v2_send_events_cli": true,
+    "tengu_canary": {},
+    "tengu_fennel_kite_model": "",
+    "tengu_drift_lantern": false,
+    "tengu_anchor_tide": true,
+    "tengu_slate_harrier": "off",
+    "tengu_destructive_command_warning": false,
+    "tengu_orchid_trellis": false,
+    "tengu_crystal_beam": {
+      "budgetTokens": 0
+    },
+    "tengu_session_memory": false,
+    "tengu_harbor_permissions": true,
+    "tengu_amber_anchor": false,
+    "tengu_crimson_echo": {},
+    "tengu_maple_pier": false,
+    "tengu_slate_wren": false,
+    "tengu_ccr_post_turn_summary": false,
+    "tengu_copper_wren": false,
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_amber_prism": true,
+    "tengu_willow_mode": "hint_v2",
+    "tengu_version_config": {
+      "minVersion": "1.0.24"
+    },
+    "tengu_dunwich_bell": false,
+    "tengu_quiet_basalt_echo": false,
+    "tengu_porch_bell_9f": "",
+    "tengu_workout2": true,
+    "tengu_tangerine_ladder_boost": true,
+    "tengu_ashen_kelp": true,
+    "tengu_lapis_thicket": false,
+    "tengu_birch_kettle": false,
+    "tengu_lilac_loom": {},
+    "tengu_event_watchdog_default_on": false,
+    "tengu_team_discovery": false,
+    "tengu_good_survey_transcript_ask_config": {
+      "probability": 0.5
+    },
+    "tengu_slate_thimble": false,
+    "tengu_crimson_vector": false,
+    "tengu_chomp_inflection": true,
+    "tengu_pewter_lantern": false,
+    "tengu_slate_finch": false,
+    "tengu_permission_friction": true,
+    "tengu_post_compact_survey": false,
+    "tengu_keybinding_customization_release": true,
+    "tengu_vellum_siding": false,
+    "tengu_orford_ness": false,
+    "tengu_loggia_carousel": false,
+    "tengu_gouda_loop": true,
+    "tengu_onyx_plover": {
+      "enabled": false,
+      "minHours": 24,
+      "minSessions": 3,
+      "remoteEnabled": false
+    },
+    "tengu_bridge_poll_interval_config": {
+      "poll_interval_ms_not_at_capacity": 2000,
+      "poll_interval_ms_at_capacity": 600000,
+      "heartbeat_interval_ms": 0,
+      "multisession_poll_interval_ms_not_at_capacity": 5000,
+      "multisession_poll_interval_ms_at_capacity": 60000,
+      "multisession_poll_interval_ms_partial_capacity": 5000,
+      "non_exclusive_heartbeat_interval_ms": 180000,
+      "session_keepalive_interval_ms": 0,
+      "session_keepalive_interval_v2_ms": 0
+    },
+    "tengu_react_vulnerability_warning": false,
+    "tengu_sepia_moth": false,
+    "tengu_cloth_snorkel": false,
+    "tengu_file_write_optimization": true,
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 10000,
+      "maxExportBatchSize": 400,
+      "maxQueueSize": 8192,
+      "path": "/api/event_logging/v2/batch"
+    },
+    "tengu_ember_latch": true,
+    "tengu_amber_wren": {
+      "targetedRangeNudge": true,
+      "maxTokens": 25000
+    },
+    "tengu_birch_compass": true,
+    "tengu_garnet_finch": false,
+    "tengu_sedge_lantern_holdback": false,
+    "tengu_xterm_atlas_reset": true,
+    "tengu_classifier_summary_llm_emit": true,
+    "tengu_kairos_cron": true,
+    "tengu_auto_notice_once": true,
+    "tengu_slate_kestrel": true,
+    "tengu_quiet_slate_wren": false,
+    "tengu_velvet_mallet_sonnet": false,
+    "tengu_c4e_slash_upsell": true,
+    "tengu_windows_credman": false,
+    "tengu_velvet_mallet": false,
+    "tengu_velvet_hammer_sonnet_4_5": false,
+    "tengu_velvet_hammer_opus": false,
+    "tengu_slate_quill": true,
+    "tengu_quill_harbor": "acceptEdits",
+    "tengu_velvet_mallet_haiku": false,
+    "tengu_velvet_mallet_falcon": false,
+    "tengu_velvet_mallet_haiku_4_5": false,
+    "tengu_velvet_mallet_opus": false,
+    "tengu_velvet_hammer_sonnet": false,
+    "tengu_feature_claudified_template": false,
+    "tengu_loud_sugary_rock2": false,
+    "tengu_basalt_tern": false,
+    "tengu_velvet_hammer_haiku": false,
+    "tengu_velvet_hammer": false,
+    "tengu_ax_screen_reader": true,
+    "tengu_velvet_static": true,
+    "tengu_tab_read_sep": false,
+    "tengu_chrome_auto_enable": false,
+    "tengu_velvet_mallet_sonnet_4_5": false,
+    "tengu_velvet_hammer_falcon": false,
+    "tengu_soft_slate_nudge": "baseline",
+    "tengu_lantern_hearth": "off",
+    "tengu_velvet_hammer_haiku_4_5": false
+  },
+  "unpinOpus47LaunchEffort": true,
+  "firstStartTime": "2026-02-10T07:33:32.192Z",
+  "userID": "44a5e45e996aeb442d53bd26e65e4b511b9d0658fc6f46692eb2e07638373c72",
+  "opusProMigrationComplete": true,
+  "cachedChromeExtensionInstalled": true,
+  "changelogLastFetched": 1781571017109,
+  "claudeCodeFirstTokenDate": "2026-01-22T05:26:51.764743Z",
+  "appleTerminalSetupInProgress": false,
+  "appleTerminalBackupPath": "/Users/jooho/Library/Preferences/com.apple.Terminal.plist.bak",
+  "optionAsMetaKeyInstalled": true,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.38",
+  "lastReleaseNotesSeen": "2.1.178",
+  "projects": {
+    "/Users/jooho": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 7,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "lastCost": 10.975772599999999,
+      "lastAPIDuration": 2447628,
+      "lastAPIDurationWithoutRetries": 2441724,
+      "lastToolDuration": 25700,
+      "lastDuration": 74224473,
+      "lastLinesAdded": 2022,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 9390,
+      "lastTotalOutputTokens": 105969,
+      "lastTotalCacheCreationInputTokens": 718074,
+      "lastTotalCacheReadInputTokens": 16836272,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 0.62,
+      "lastFpsLow1Pct": 94.53,
+      "lastModelUsage": {
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 8871,
+          "outputTokens": 105947,
+          "cacheReadInputTokens": 16836272,
+          "cacheCreationInputTokens": 718074,
+          "webSearchRequests": 0,
+          "costUSD": 10.975143599999999
+        },
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 519,
+          "outputTokens": 22,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.000629
+        }
+      },
+      "lastSessionId": "f294168b-982d-49e1-a56b-0c98930e436a",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 22897,
+        "frame_duration_ms_min": 0.08649999999988722,
+        "frame_duration_ms_max": 47.53016700036824,
+        "frame_duration_ms_avg": 3.1007775753551963,
+        "frame_duration_ms_p50": 2.435520999133587,
+        "frame_duration_ms_p95": 7.654274900257584,
+        "frame_duration_ms_p99": 10.460818906780323,
+        "pre_tool_hook_duration_ms_count": 32,
+        "pre_tool_hook_duration_ms_min": 0,
+        "pre_tool_hook_duration_ms_max": 4,
+        "pre_tool_hook_duration_ms_avg": 0.1875,
+        "pre_tool_hook_duration_ms_p50": 0,
+        "pre_tool_hook_duration_ms_p95": 1,
+        "pre_tool_hook_duration_ms_p99": 3.070000000000004,
+        "hook_duration_ms_count": 10,
+        "hook_duration_ms_min": 0,
+        "hook_duration_ms_max": 0,
+        "hook_duration_ms_avg": 0,
+        "hook_duration_ms_p50": 0,
+        "hook_duration_ms_p95": 0,
+        "hook_duration_ms_p99": 0
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastGracefulShutdown": false,
+      "lastHintSessionId": "6d2df217-d318-47cd-bb24-7a3fa03e3b5d",
+      "lastSessionFirstPrompt": "안녕 로컬서버확인좀~",
+      "lastSessionModified": 1779066709311,
+      "lastVersionBase": "2.1.178"
+    },
+    "/Users/jooho/Documents/Claude/likethix/5.CX라벨링": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {
+        "notion": {
+          "type": "stdio",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@notionhq/notion-mcp-server"
+          ],
+          "env": {
+            "OPENAPI_MCP_HEADERS": "{\"Authorization\":\"Bearer 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\",\"Notion-Version\":\"2022-06-28\"}"
+          }
+        }
+      },
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false
+    },
+    "/Users/jooho/Documents/Claude/likethix/17.수출사업": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 2,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastCost": 7.740430249999999,
+      "lastAPIDuration": 2100059,
+      "lastAPIDurationWithoutRetries": 2100026,
+      "lastToolDuration": 1003604,
+      "lastDuration": 35666368,
+      "lastLinesAdded": 4285,
+      "lastLinesRemoved": 18,
+      "lastTotalInputTokens": 697,
+      "lastTotalOutputTokens": 119720,
+      "lastTotalCacheCreationInputTokens": 412037,
+      "lastTotalCacheReadInputTokens": 4337428,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 0.92,
+      "lastFpsLow1Pct": 142.2,
+      "lastModelUsage": {
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 697,
+          "outputTokens": 119720,
+          "cacheReadInputTokens": 4337428,
+          "cacheCreationInputTokens": 412037,
+          "webSearchRequests": 0,
+          "costUSD": 7.740430249999999
+        }
+      },
+      "lastSessionId": "03f6af90-ac3e-479a-bc8f-e9fbabd85006",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 32657,
+        "frame_duration_ms_min": 0.02354199999535922,
+        "frame_duration_ms_max": 123.44841700047255,
+        "frame_duration_ms_avg": 1.4287559395255862,
+        "frame_duration_ms_p50": 1.1257710006902926,
+        "frame_duration_ms_p95": 3.73261689984937,
+        "frame_duration_ms_p99": 8.954677999962575,
+        "pre_tool_hook_duration_ms_count": 90,
+        "pre_tool_hook_duration_ms_min": 0,
+        "pre_tool_hook_duration_ms_max": 8,
+        "pre_tool_hook_duration_ms_avg": 0.7222222222222222,
+        "pre_tool_hook_duration_ms_p50": 1,
+        "pre_tool_hook_duration_ms_p95": 2,
+        "pre_tool_hook_duration_ms_p99": 4.439999999999998,
+        "hook_duration_ms_count": 49,
+        "hook_duration_ms_min": 0,
+        "hook_duration_ms_max": 2,
+        "hook_duration_ms_avg": 0.1836734693877551,
+        "hook_duration_ms_p50": 0,
+        "hook_duration_ms_p95": 1,
+        "hook_duration_ms_p99": 1.519999999999996
+      }
+    },
+    "/Users/jooho/Documents/Claude/likethix/likethix-qc": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0.153382,
+      "lastAPIDuration": 25880,
+      "lastAPIDurationWithoutRetries": 25674,
+      "lastToolDuration": 3285,
+      "lastDuration": 74235673,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 617,
+      "lastTotalOutputTokens": 1166,
+      "lastTotalCacheCreationInputTokens": 16646,
+      "lastTotalCacheReadInputTokens": 118030,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 0.01,
+      "lastFpsLow1Pct": 179.87,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 512,
+          "outputTokens": 22,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0006219999999999999
+        },
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 105,
+          "outputTokens": 1144,
+          "cacheReadInputTokens": 118030,
+          "cacheCreationInputTokens": 16646,
+          "webSearchRequests": 0,
+          "costUSD": 0.15275999999999998
+        }
+      },
+      "lastSessionId": "b8b34282-cdbc-41e1-922b-9c6dd9c3e0cf",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 336,
+        "frame_duration_ms_min": 0.07691699999850243,
+        "frame_duration_ms_max": 12.218000000000757,
+        "frame_duration_ms_avg": 0.9028911250184053,
+        "frame_duration_ms_p50": 0.4842079999998532,
+        "frame_duration_ms_p95": 3.0799682499990695,
+        "frame_duration_ms_p99": 5.5035647988319365,
+        "pre_tool_hook_duration_ms_count": 3,
+        "pre_tool_hook_duration_ms_min": 0,
+        "pre_tool_hook_duration_ms_max": 0,
+        "pre_tool_hook_duration_ms_avg": 0,
+        "pre_tool_hook_duration_ms_p50": 0,
+        "pre_tool_hook_duration_ms_p95": 0,
+        "pre_tool_hook_duration_ms_p99": 0
+      },
+      "exampleFiles": [
+        "Sidebar.tsx",
+        "page.tsx",
+        "route.ts",
+        "layout.tsx",
+        "home-page.tsx"
+      ],
+      "exampleFilesGeneratedAt": 1781242659699,
+      "lastGracefulShutdown": false,
+      "lastHintSessionId": "e3947d49-b0cd-461b-809f-6b51045d06a8",
+      "lastSessionFirstPrompt": "개발서버좀 확인후 열어줄래",
+      "lastSessionModified": 1779150628351,
+      "lastVersionBase": "2.1.178",
+      "hasUnseenTeamArtifacts": false
+    }
+  },
+  "hasShownOpus46Notice": {
+    "01a4d36a-d663-41e1-b8ab-7bdfeca22011": true
+  },
+  "groveConfigCache": {
+    "bb0e5c78-a218-4f84-b3b4-023fb8c4d087": {
+      "grove_enabled": true,
+      "timestamp": 1781489820956
+    }
+  },
+  "s1mAccessCache": {
+    "01a4d36a-d663-41e1-b8ab-7bdfeca22011": {
+      "hasAccess": false,
+      "hasAccessNotAsDefault": false,
+      "timestamp": 1771460804936
+    }
+  },
+  "penguinModeOrgEnabled": false,
+  "passesEligibilityCache": {
+    "01a4d36a-d663-41e1-b8ab-7bdfeca22011": {
+      "eligible": true,
+      "referral_code_details": {
+        "code": "qThfDKOlyg",
+        "campaign": "claude_code_guest_pass_a47c",
+        "referral_link": "https://claude.ai/referral/qThfDKOlyg"
+      },
+      "referrer_reward": {
+        "amount_minor_units": 1000,
+        "currency": "USD"
+      },
+      "remaining_passes": 3,
+      "limit": 3,
+      "share_link": "https://claude.ai/referral/qThfDKOlyg",
+      "terms_url": "https://support.claude.com/en/articles/12875061-claude-code-guest-passes",
+      "timestamp": 1781489822337
+    }
+  },
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "clientDataCache": {
+    "cedar_lagoon": {
+      "claude-fable": true,
+      "claude-mythos": true
+    }
+  },
+  "passesUpsellSeenCount": 3,
+  "hasVisitedPasses": false,
+  "passesLastSeenRemaining": 3,
+  "feedbackSurveyState": {
+    "lastShownTime": 1781513530868
+  },
+  "sonnet1m45MigrationComplete": true,
+  "birthdayHatAnimationCount": 3,
+  "cachedExtraUsageDisabledReason": "org_level_disabled",
+  "anonymousId": "claudecode.v1.0d4d0293-7c45-4088-ae30-9a49824f258c",
+  "toolUsage": {
+    "ToolSearch": {
+      "usageCount": 10,
+      "lastUsedAt": 1772101636232
+    },
+    "WebSearch": {
+      "usageCount": 11,
+      "lastUsedAt": 1772018800396
+    },
+    "Bash": {
+      "usageCount": 393,
+      "lastUsedAt": 1772101439813
+    },
+    "Task": {
+      "usageCount": 21,
+      "lastUsedAt": 1772098489622
+    },
+    "Read": {
+      "usageCount": 22,
+      "lastUsedAt": 1772101387803
+    },
+    "Write": {
+      "usageCount": 26,
+      "lastUsedAt": 1772101362768
+    },
+    "Edit": {
+      "usageCount": 37,
+      "lastUsedAt": 1772101433259
+    },
+    "mcp__claude_ai_Notion__notion-fetch": {
+      "usageCount": 4,
+      "lastUsedAt": 1772101643395
+    },
+    "mcp__claude_ai_Notion__notion-update-page": {
+      "usageCount": 3,
+      "lastUsedAt": 1772101465935
+    },
+    "WebFetch": {
+      "usageCount": 8,
+      "lastUsedAt": 1772018814694
+    },
+    "Glob": {
+      "usageCount": 12,
+      "lastUsedAt": 1772083154892
+    },
+    "Grep": {
+      "usageCount": 3,
+      "lastUsedAt": 1772066569860
+    }
+  },
+  "showSpinnerTree": false,
+  "claudeAiMcpEverConnected": [
+    "claude.ai Notion"
+  ],
+  "lastPlanModeUse": 1773286370419,
+  "githubRepoPaths": {
+    "josuseck/likethix-qc": [
+      "/Users/jooho/Documents/Claude/likethix/likethix-qc"
+    ]
+  },
+  "skillUsage": {
+    "simplify": {
+      "usageCount": 1,
+      "lastUsedAt": 1774264213109
+    },
+    "update-config": {
+      "usageCount": 4,
+      "lastUsedAt": 1779066848242
+    },
+    "구글워크스페이스": {
+      "usageCount": 7,
+      "lastUsedAt": 1780292826813
+    },
+    "수입": {
+      "usageCount": 14,
+      "lastUsedAt": 1781571076505
+    }
+  },
+  "additionalModelOptionsCache": [
+    {
+      "value": "claude-fable-5[1m]",
+      "label": "Fable (disabled)",
+      "description": "Claude Fable 5 is currently unavailable. Learn more: https://www.anthropic.com/news/fable-mythos-access",
+      "disabled": true
+    }
+  ],
+  "deepLinkTerminal": "Terminal",
+  "overageCreditGrantCache": {
+    "01a4d36a-d663-41e1-b8ab-7bdfeca22011": {
+      "info": {
+        "available": false,
+        "eligible": false,
+        "granted": false,
+        "amount_minor_units": null,
+        "currency": null
+      },
+      "timestamp": 1778129007182
+    }
+  },
+  "migrationVersion": 13,
+  "additionalModelCostsCache": {},
+  "remoteControlUpsellSeenCount": 3,
+  "closedIssuesLastChecked": 1781489821277,
+  "hasResetAutoModeOptInForDefaultOffer": true,
+  "cachedExperimentFeatures": [
+    "tengu_amber_prism",
+    "tengu_cedar_inlet",
+    "tengu_coral_beacon",
+    "tengu_flint_harbor",
+    "tengu_mcp_subagent_prompt",
+    "tengu_orchid_mantis_v2",
+    "tengu_plank_river_frost",
+    "tengu_read_dedup_killswitch"
+  ],
+  "seenNotifications": {},
+  "hasUsedBackslashReturn": true,
+  "routineFiredWatermark": "2026-05-11T02:06:27.611Z",
+  "agentLastUsed": {
+    "bg": 1779804796963
+  },
+  "hasUsedAgentsFleet": true,
+  "cachedGrowthBookFeaturesAt": 1781571485739,
+  "oauthAccount": {
+    "accountUuid": "bb0e5c78-a218-4f84-b3b4-023fb8c4d087",
+    "emailAddress": "jooho3108@gmail.com",
+    "organizationUuid": "01a4d36a-d663-41e1-b8ab-7bdfeca22011",
+    "hasExtraUsageEnabled": false,
+    "billingType": "stripe_subscription",
+    "accountCreatedAt": "2026-01-21T09:59:53.307301Z",
+    "subscriptionCreatedAt": "2026-01-21T11:28:24.987397Z",
+    "ccOnboardingFlags": {},
+    "claudeCodeTrialEndsAt": null,
+    "claudeCodeTrialDurationDays": null,
+    "seatTier": null,
+    "displayName": "주호",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "jooho3108@gmail.com's Organization",
+    "organizationType": "claude_max",
+    "organizationRateLimitTier": "default_claude_max_5x",
+    "userRateLimitTier": null
+  },
+  "tipLifetimeShownCounts": {
+    "fotw-campaign-upsell": 5,
+    "theme-command": 2,
+    "enter-to-steer-in-relatime": 2,
+    "todo-list": 2,
+    "image-paste": 2,
+    "color-when-multi-clauding": 3,
+    "git-worktrees": 3,
+    "install-github-app": 3,
+    "plan-mode-for-complex-tasks": 5,
+    "guest-passes": 7,
+    "goal-command-nudge": 4,
+    "install-slack-app": 3,
+    "permissions": 3,
+    "drag-and-drop-images": 3,
+    "frontend-design-plugin": 5,
+    "shift-enter": 2,
+    "paste-images-mac": 2,
+    "double-esc-code-restore": 2,
+    "continue": 2,
+    "shift-tab": 2,
+    "rename-conversation": 2,
+    "custom-commands": 2,
+    "voice-mode": 2,
+    "status-line": 1,
+    "memory-command": 1,
+    "desktop-shortcut": 1,
+    "web-app": 1,
+    "remote-control": 1,
+    "feedback-command": 1,
+    "custom-agents": 1
+  },
+  "lastShownEmergencyTip": "Claude Fable 5 is currently unavailable. Please use Opus 4.8 or another available model. Learn more: https://www.anthropic.com/news/fable-mythos-access"
+}

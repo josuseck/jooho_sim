@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "미니멀러그 세트 바코드 변경 (LE102S → LE100B)",
+  "description": "엑셀 파일: /Users/jooho/Downloads/미니멀러그_세트변경바코드_260610.xlsx\n- 30개 세트 바코드 변경 (LE102S1~6 → LE100B1~6)\n- product_barcodes, product_sku, set_composition 테이블 업데이트\n- .env.local 권한 문제 해결 필요\n- 스크립트: scripts/update_minimal_rug_barcodes.py (준비됨)",
+  "activeForm": "미니멀러그 세트 바코드 변경 중",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}
