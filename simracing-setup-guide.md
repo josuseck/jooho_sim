@@ -38,6 +38,8 @@
 28. [WEC 2025 실차 퀄리파잉 랩타임](#28-wec-2025-실차-퀄리파잉-랩타임)
 29. [용어 사전](#29-용어-사전)
 30. [하이퍼카 배터리 관리 (LMH/LMDh)](#30-하이퍼카-배터리-관리-lmhlmdh)
+31. [하이퍼카 브레이킹 물리 & 실제 vs 게임](#31-하이퍼카-브레이킹-물리--실제-vs-게임)
+32. [VI-RSR SimHub LED 세팅 가이드](#32-vi-rsr-simhub-led-세팅-가이드)
 
 ---
 
@@ -99,11 +101,15 @@
 ### 림 & 휠베이스
 
 - **휠베이스**: SimuCUBE 2 Pro (25Nm, 22-bit 인코더)
-- **림**: BavarianSimTec Alpha
+- **림**: Velocitas Imperium VI-RSR (Porsche 911 RSR 레플리카)
+- **구매 시기**: 2026년 4월 (중고, 조립 완료품)
+- **도착 예정**: 2026년 7월 초 (현재 유튜버 보유 중)
+- **구매가**: 145만원 (Conspit MAX01 판매 후 실질 70만원)
+- **입력**: 90개 (버튼 10, 인코더 8, 펑키 스위치 2, 패들 6)
+- **디스플레이**: VoCore 5" 포함
 - **마운트**: Simcore 사이드마운트 + Simcore 연장봉
-- **이머전시 스톱**: Ultimate 스타일 (못생긴 공업용 빨간 스위치 대신)
+- **이머전시 스톱**: Ultimate 스타일
 - **PSU**: 외장 PSU 포함
-- **구매가**: 풀세트 120만원 (중고)
 
 ### 페달
 
@@ -1892,6 +1898,278 @@ Motor Map 최대 (100~200kW)
 - [Traxion.gg - LMU Hypercar Braking Guide](https://traxion.gg/le-mans-ultimate-how-to-master-hypercar-braking/)
 - [trophi.ai - LMU Hypercar Braking Guide](https://www.trophi.ai/post/le-mans-ultimate-hypercar-braking-guide/)
 - [WEC Official Regulations](https://www.fiawec.com/en/page/regulations-1)
+
+---
+
+## 31. 하이퍼카 브레이킹 물리 & 실제 vs 게임
+
+### 다운포스와 브레이킹의 관계
+
+**속도별 브레이킹 특성**:
+```
+고속 (300km/h+)
+├─ 다운포스: 최대
+├─ 차가 지면에 눌림 (공기역학적 그립)
+└─ 브레이크 100% 밟아도 락업 안 됨 ✅
+
+중속 (200km/h)
+├─ 다운포스: 감소 중
+├─ 공기역학적 그립 줄어듦
+└─ 브레이크 압력 조절 필요 ⚠️
+
+저속 (100km/h)
+├─ 다운포스: 거의 없음
+├─ 타이어 기계적 그립만 남음
+└─ 휠 락업 매우 쉬움 ❌
+```
+
+### Brake Migration (브레이크 마이그레이션)
+
+**작동 원리**:
+```
+브레이크 페달 100% 압력 감지
+    ↓
+고속: 뒤쪽으로 바이어스 이동 (다운포스 활용)
+    ↓
+감속 중: 앞쪽으로 바이어스 자동 복귀
+    ↓
+저속: 안전한 바이어스로 복귀 (락업 방지)
+```
+
+**설정값** (LMU):
+- 범위: 0 (꺼짐) ~ 2.5 (최대)
+- 단위: 0.5씩 증가
+- 추천: 1.0~1.5 (트랙 따라 다름)
+
+**왜 필요한가?**
+- 300km/h: 브레이크 바이어스 48% (뒤쪽) → 다운포스 활용
+- 100km/h: 브레이크 바이어스 54% (앞쪽) → 락업 방지
+- GT3에는 없는 기술!
+
+### MGU 회생 브레이킹
+
+**LMDh (예: Porsche 963)**:
+```
+기계식 브레이크 (디스크)
+    +
+MGU 회생 (후륜 180kW)
+    +
+엔진 브레이킹
+    =
+총 제동력
+```
+
+**LMH (예: Ferrari 499P)**:
+```
+기계식 브레이크 (디스크)
+    +
+MGU 회생 (전륜 또는 후륜 200kW)
+    +
+엔진 브레이킹
+    =
+총 제동력
+```
+
+**배터리 100% 문제**:
+```
+배터리 100% → MGU 회생 불가
+    ↓
+후륜 제동력 급감 (LMDh 기준 180kW 손실)
+    ↓
+브레이크 바이어스 자동으로 앞으로 이동
+    ↓
+BUT 페달 압력 똑같으면 전륜 과부하 → 락업
+```
+
+### 하이퍼카 vs GT3 브레이킹 차이
+
+| 항목 | 하이퍼카 (LMH/LMDh) | GT3 |
+|------|-------------------|-----|
+| **다운포스** | 매우 큼 (4:1 비율) | 적당 |
+| **초반 브레이크 압력** | **85-95%** (실제) | 70-85% |
+| **블리딩 오프** | 급격히 줄임 | 완만하게 |
+| **Brake Migration** | ✅ 있음 | ❌ 없음 |
+| **ABS** | ❌ 없음 | ✅ 있음 |
+| **브레이크 바이어스** | 48-52% (속도 의존) | 54-58% |
+| **페달 감각** | 초반 딱딱 → 중간 부드럽게 | 균일 |
+
+**브레이킹 테크닉 차이**:
+
+GT3:
+```
+100m: 브레이크 70% → 50m: 85% → 에이펙스: 50% → 서서히 풀기
+```
+
+하이퍼카 (실제):
+```
+100m: 브레이크 90-95% → 50m: 급격히 70% → 에이펙스: 30-40% → 부드럽게 풀기
+```
+
+**핵심**: 하이퍼카는 **"쾅 → 슥"** / GT3는 **"꾹 → 쭉"**
+
+### 실제 프로 드라이버 브레이킹 (중요!)
+
+**왜 온보드에서 100% 안 보이나?**
+
+1. **브레이크는 "퍼센티지"가 아님**
+   - F1/WEC 텔레메트리: bar (압력 단위) 사용
+   - "100%"가 무엇인지 정의 불가능
+
+2. **실제 프로 드라이버 세팅**:
+   ```
+   최대 페달력의 80%를 "게임 내 100%"로 설정
+       ↓
+   드라이버가 "매우 세게" 밟으면 게임에서 100%
+       ↓
+   실제로는 85-95% 범위에서 운용
+       ↓
+   나머지 5-20%는 비상/여유분
+   ```
+
+3. **왜 100% 안 밟나?**
+   - 트레일 브레이킹 불가능 (압력 조절 여유 필요)
+   - 페달 감각 유지 (바닥 닿으면 조절 불가)
+   - 비상 상황 대비
+
+**실제 온보드 브레이크 압력**:
+
+| 구간 | 시뮬 표시 | 실제 페달 압력 |
+|------|---------|-------------|
+| 초반 강타 | 95-100% | 80-90% |
+| 유지 | 80-90% | 70-80% |
+| 트레일 브레이크 | 60-40% | 50-35% |
+| 릴리스 | 20-0% | 15-0% |
+
+### Brake Migration 설정 가이드
+
+| 트랙 특성 | Migration 설정 | 이유 |
+|---------|--------------|------|
+| **긴 직선** (르망, 몬자) | 1.5~2.0 | 고속 다운포스 최대 활용 |
+| **중속 코너 많음** (스파) | 1.0~1.5 | 균형 |
+| **스톱 앤 고** (바레인) | 0.5~1.0 | 저속 안정성 우선 |
+
+### 출처
+
+- [Le Mans Ultimate: How to master Hypercar braking | Traxion](https://traxion.gg/le-mans-ultimate-how-to-master-hypercar-braking/)
+- [Point 'Brake': Porsche's 963 hypercar braking system](https://www.motorsport.com/lemans/news/point-brake-the-complexities-behind-porsches-963-hypercar-braking-system/10731976/)
+- [Everything You Need To Know About Brake Migration](https://www.overtake.gg/news/guide-to-brake-migration-in-le-mans-ultimate-hypercars.3592/)
+- [How to Set up your Pedals for iRacing - DRIVER61](https://driver61.com/sim-racing/how-to-set-up-your-pedals-for-iracing/)
+
+---
+
+## 32. VI-RSR SimHub LED 세팅 가이드
+
+> **상태**: VI-RSR 도착 예정 (2026년 7월 초)  
+> **현재**: DNR LED 프로필 요청 중 (2026년 6월 19일)
+
+### SimHub LED 개수 확인 방법
+
+#### 방법 1: Devices 탭 (가장 쉬움)
+
+```
+1. SimHub 실행
+2. 좌측 메뉴 → "Devices" 클릭
+3. "Velocitas..." 또는 "VI-RSR" 찾기
+4. 클릭 → 우측에 "LEDs: __개" 표시
+```
+
+#### 방법 2: Settings → Custom Serial Devices
+
+```
+1. SimHub → Settings
+2. "Custom Serial Devices" 탭
+3. VI-RSR 찾기 → "Edit"
+4. "RGB LEDs count" 확인
+```
+
+**Velocitas 공식 스펙**: 26개 (shift LEDs)
+
+### 기본 RPM 프로그레스 바 설정
+
+**설정 방법**:
+```
+1. Devices → VI-RSR → LEDs 섹션
+2. "Use as progress bar" 체크
+3. Data source: "CurrentRPM"
+4. Minimum value: 0
+5. Maximum value: [MaxRPM]
+6. Style: "Progressive"
+```
+
+**색상 설정** (GT3/하이퍼카 표준):
+```
+0-70%:   🟢 Green  RGB(0, 255, 0)
+70-85%:  🟡 Yellow RGB(255, 255, 0)
+85-95%:  🟠 Orange RGB(255, 165, 0)
+95-100%: 🔴 Red    RGB(255, 0, 0)
+100%+:   🔴 Red Blink (리미터)
+```
+
+### 빠른 세팅 (복붙용)
+
+```
+Data Source: [CurrentRPM]
+Min: 0
+Max: [MaxRPM]
+Style: Progressive
+Colors:
+  - 0%: Green
+  - 70%: Yellow
+  - 85%: Orange
+  - 95%: Red
+  - 100%: Red Blink
+```
+
+### 차량별 RPM 자동 인식
+
+SimHub는 게임별로 MaxRPM 자동 인식:
+```
+LMU Porsche 963: ~8,500 rpm
+iRacing 911 GT3 R: ~9,000 rpm
+시프트 포인트: MaxRPM의 95-98%
+```
+
+### 추가 기능 (선택)
+
+**TC/ABS 작동 시 파란색**:
+```
+Condition: [TractionControlActive] = 1
+Action: Flash Blue (모든 LED)
+Color: RGB(0, 100, 255)
+```
+
+**기어 표시** (중앙 LED):
+```
+중앙 LED를 기어 인디케이터로:
+P/R/N: Red
+1-3: Green
+4-6: Yellow
+7-8: Red
+```
+
+### VI-RSR 버튼 매핑 (하이퍼카 전용)
+
+**인코더 8개 활용**:
+
+| 인코더 | 기능 | 하이퍼카 필수도 | GT3 |
+|--------|------|----------------|-----|
+| 1 | Motor Map +/- | ⭐⭐⭐ 필수 | - |
+| 2 | Brake Migration +/- | ⭐⭐⭐ 필수 | - |
+| 3 | Brake Bias +/- | ⭐⭐⭐ 필수 | ⭐⭐⭐ |
+| 4 | TC +/- | ⭐⭐ 자주 | ⭐⭐ |
+| 5 | ABS +/- | ⭐⭐ 자주 | ⭐⭐ |
+| 6 | Regen +/- | ⭐ 가끔 | - |
+| 7 | Engine Map +/- | ⭐ 가끔 | ⭐ |
+| 8 | 여유 (타이어/연료) | - | ⭐ |
+
+**GT3 모드**: 인코더 6개면 충분 (Motor Map/Regen 불필요)
+
+### DNR LED 프로필 요청 상태
+
+**요청일**: 2026년 6월 19일  
+**채널**: DNR Patreon Discord #feature-requests  
+**내용**: VI-RSR LED 프로필 추가 요청  
+**예상**: 1-2주 내 업데이트 또는 커스텀 프로필 가이드 제공
 
 ---
 

@@ -3,11 +3,20 @@
 ## 하드웨어 구성
 
 ### 휠베이스
-- **MOZA R25** - 다이렉트 드라이브 휠베이스
+- **SimuCUBE 2 Pro** - 25Nm, 22-bit 인코더
+
+### 림
+- **Velocitas Imperium VI-RSR** (Porsche 911 RSR 레플리카)
+- 구매: 2026년 4월 (중고, 조립 완료품, ₩145만원)
+- 도착 예정: 2026년 7월 초 (현재 유튜버 보유 중)
+- 입력: 90개 (버튼 10, 인코더 8, 펑키 스위치 2, 패들 6)
+- 디스플레이: VoCore 5" 포함
+- 실질 비용: ₩70만원 (Conspit MAX01 판매 후)
 
 ### 페달
 - **브레이크**: MOZA mBOOSTER 액티브 페달
 - **스로틀**: CRP2 기본 + 심매직 햅틱 모터
+- **계획**: Simucube ActivePedal Pro 업그레이드 고려
 
 #### mBOOSTER 게임별 지원 효과
 **Le Mans Ultimate** (주 게임):
