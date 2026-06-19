@@ -75,23 +75,39 @@ S3 (복합): Indianapolis ~ Porsche Curves ~ Ford Chicanes
 
 ### S1 — 기술 섹션 (Dunlop ~ Tertre Rouge)
 
-#### 1️⃣ Dunlop Chicane (시작선 통과 직후)
+#### 1️⃣ Dunlop Curve (던롭 커브)
 
-**특징**: 좌-우 시케인, 80km/h
+**특징**: 우회전, 첫 코너, 140-160km/h
 
 **푸조 공략**:
-- **브레이킹**: 200m 보드 기준 (일찍 시작)
-- **라인**: 왼쪽 연석 밟고 → 오른쪽 넓게
-- **TC**: 출구 일찍 스로틀 (에스 커브 진입 속도)
-- **주의**: 첫 코너 과욕 금지 (사고 다발)
+- **브레이킹**: 시작선 통과 직후
+- **라인**: 왼쪽 → 안쪽 → 오른쪽
+- **TC**: 안정적으로 (던롭 시케인 진입 준비)
+- **주의**: 첫 코너 과욕 금지
 
 **밤 레이스 팁**:
-- 브레이킹 포인트: 200m 보드 불빛 확인
-- 연석 흰색 반사 보고 라인 잡기
+- 시작선 불빛으로 방향 확인
+- 안정적으로 시작
 
 ---
 
-#### 2️⃣ Esses (에스 커브)
+#### 2️⃣ Dunlop Chicane (던롭 시케인)
+
+**특징**: 좌-우 시케인, 80-100km/h
+
+**푸조 공략**:
+- **브레이킹**: 던롭 커브 출구 직후
+- **라인**: 왼쪽 연석 밟고 → 오른쪽 넓게
+- **TC**: 출구 일찍 스로틀 (에스 커브 진입 속도)
+- **주의**: 사고 다발 구간 (안전 우선)
+
+**밤 레이스 팁**:
+- 연석 흰색 반사 보고 라인 잡기
+- 첫 랩은 특히 조심
+
+---
+
+#### 3️⃣ Esses (에스 커브)
 
 **특징**: 좌-우-좌 연속, 180-220km/h
 
@@ -107,7 +123,7 @@ S3 (복합): Indianapolis ~ Porsche Curves ~ Ford Chicanes
 
 ---
 
-#### 3️⃣ Tertre Rouge (테르트 루즈) ⚠️
+#### 4️⃣ Tertre Rouge (테르트 루즈) ⚠️
 
 **특징**: 고속 우회전, 뮬산 진입, 220-240km/h
 
@@ -133,7 +149,7 @@ S3 (복합): Indianapolis ~ Porsche Curves ~ Ford Chicanes
 
 ### S2 — 뮬산 스트레이트 🚀
 
-#### 4️⃣ Mulsanne Straight (6km 직선)
+#### 5️⃣ Mulsanne Straight (6km 직선)
 
 **특징**: 세계 최장 직선, 6km, 340km/h+
 
@@ -162,7 +178,7 @@ S3 (복합): Indianapolis ~ Porsche Curves ~ Ford Chicanes
 
 ---
 
-#### 5️⃣ Mulsanne Corner (뮬산 코너)
+#### 6️⃣ Mulsanne Corner (뮬산 코너)
 
 **특징**: 중속 우회전, 100-110km/h
 
@@ -186,7 +202,7 @@ S3 (복합): Indianapolis ~ Porsche Curves ~ Ford Chicanes
 
 ### S3 — 복합 섹션 (Indianapolis ~ Ford Chicanes)
 
-#### 6️⃣ Indianapolis (인디애나폴리스)
+#### 7️⃣ Indianapolis (인디애나폴리스)
 
 **특징**: 고속 복합 코너 (좌-우), 180-220km/h
 
@@ -206,7 +222,7 @@ S3 (복합): Indianapolis ~ Porsche Curves ~ Ford Chicanes
 
 ---
 
-#### 7️⃣ Arnage (아르나주) ⚠️
+#### 8️⃣ Arnage (아르나주) ⚠️
 
 **특징**: 저속 헤어핀, 90km/h, 레이스 최저속
 
@@ -228,7 +244,7 @@ S3 (복합): Indianapolis ~ Porsche Curves ~ Ford Chicanes
 
 ---
 
-#### 8️⃣ Porsche Curves (포르쉐 커브스) ⭐
+#### 9️⃣ Porsche Curves (포르쉐 커브스) ⭐
 
 **특징**: 중고속 연속 코너 (5-6개), 160-240km/h
 
@@ -260,7 +276,7 @@ S3 (복합): Indianapolis ~ Porsche Curves ~ Ford Chicanes
 
 ---
 
-#### 9️⃣ Ford Chicanes (포드 시케인)
+#### 🔟 Ford Chicanes (포드 시케인)
 
 **특징**: 좌-우 시케인 2개, 최종 코너, 120km/h
 
