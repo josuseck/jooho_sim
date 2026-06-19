@@ -72,23 +72,39 @@
 
 ---
 
-## Round 2 — Spa-Francorchamps
+## Round 2 — Spa-Francorchamps (드라마틱 노을)
 
 | 항목 | 값 |
 |---|---|
 | Track | Spa-Francorchamps |
 | Real Road | Heavy |
 | Water Depth | Dry |
+| **Time Scale** | **3x** |
 
 ### 세션
 
-| 세션 | 시간 | Time Of Day |
-|---|---|---|
-| Practice | 20분 | 17:00 |
-| Qualifying | 10분 | 17:30 |
-| Race | 25분 | 18:00 |
+| 세션 | 시간 | Time Of Day | 게임 내 종료 |
+|---|---|---|---|
+| Practice | 20분 | 17:00 | 18:00 |
+| Qualifying | 10분 | **18:00** | 18:30 |
+| Race | 25분 | **18:30** | **19:45** |
 
-> 노을지는 시간대 레이스 (레이스 시작 황금빛 → 후반 붉은 노을)
+> **레이스 분위기**: 황금빛 시작 → 붉은 노을 절정 → 구름 끼며 보라빛
+
+### 날씨 슬롯 (동적 변화)
+
+| Slot | 시점 (게임 내 시간) | Sky | Chance of Rain | Temperature |
+|------|---------------------|-----|----------------|-------------|
+| **Slot 1** | 시작 (18:30) | Clear | 0% | 22°C |
+| **Slot 2** | 25% (18:49) | Clear | 0% | 21°C |
+| **Slot 3** | 50% (19:07) | Light Clouds | 0% | 21°C |
+| **Slot 4** | 75% (19:26) | Light Clouds | 0% | 20°C |
+| **Slot 5** | 종료 (19:45) | Partially Cloudy | 0% | 19°C |
+
+**효과**:
+- 레이스 후반부 Light Clouds → Partially Cloudy 전환
+- 노을 + 구름 조합으로 더 드라마틱한 분위기
+- 온도 22°C → 19°C 자연스럽게 하락
 
 ---
 
