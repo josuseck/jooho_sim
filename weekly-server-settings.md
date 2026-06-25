@@ -28,7 +28,6 @@ Track:              Fuji Speedway
 Practice:           15min / Qualifying: 10min / Race: 20min
 Sky:                Clear
 Ambient Temp:       26°C
-Track Temp:         40°C
 ```
 
 ---
@@ -59,7 +58,6 @@ Track:              Sebring International Raceway
 Practice:           15min / Qualifying: 10min / Race: 20min
 Sky:                Clear
 Ambient Temp:       21°C
-Track Temp:         30°C
 ```
 
 ---
