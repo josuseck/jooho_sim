@@ -1229,6 +1229,26 @@ Steering Force Output Min: 0%
 Use Steering Torque Minimum: Off
 ```
 
+### FFB 게인 세팅 원칙 (SC2 Pro 기준)
+
+하드웨어(True Drive) 게인과 인게임 게인은 곱해지는 구조.
+True Drive를 100%로 두면 충돌·스핀 시 25Nm 스파이크 위험 + 약한 FFB 디테일 손실.
+
+**권장 세팅:**
+```
+True Drive Overall Strength: 60% (약 15Nm 캡)
+LMU 인게임 FFB:              70
+```
+
+**잘못된 세팅 (이전):**
+```
+True Drive Overall Strength: 100% → 25Nm 스파이크 가능
+LMU 인게임 FFB:              40   → 약한 FFB 정보부터 손실
+```
+
+인게임 FFB 미터가 지속적으로 100% 붙어있으면 클리핑 → 인게임 낮추기.
+간헐적 스파이크는 정상.
+
 ### 후지 클래식 (911 GT3 R) 목표 페이스
 
 ```
