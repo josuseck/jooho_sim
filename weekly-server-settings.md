@@ -48,10 +48,13 @@
 > ⚠️ 후지는 인게임 일몰이 실제보다 빠를 수 있음 → 프랙 때 확인 후 18:29로 늦출 것
 
 ```
-Time of Day: 18:19
-Time Progression: x2
-Track: Fuji Speedway
-Practice: 15min / Qualifying: 10min / Race: 20min
+Time of Day:        18:19
+Time Progression:   x2
+Track:              Fuji Speedway
+Practice:           15min / Qualifying: 10min / Race: 20min
+Sky:                Clear
+Ambient Temp:       22°C
+Track Temp:         28°C
 ```
 
 ---
@@ -76,10 +79,13 @@ Practice: 15min / Qualifying: 10min / Race: 20min
 - 레이스 후반: 어스름
 
 ```
-Time of Day: 18:25
-Time Progression: x2
-Track: Sebring International Raceway
-Practice: 15min / Qualifying: 10min / Race: 20min
+Time of Day:        18:25
+Time Progression:   x2
+Track:              Sebring International Raceway
+Practice:           15min / Qualifying: 10min / Race: 20min
+Sky:                Clear
+Ambient Temp:       21°C
+Track Temp:         30°C
 ```
 
 ---
