@@ -39,3 +39,27 @@
 
 ## 테스트 결과 기록
 - (주말 테스트 후 여기에 어떤 항목으로 해결됐는지 기록)
+
+---
+
+# [같이 확인] mBOOSTER 센서 출력 비율 — 브레이크 일관성
+
+작성: 2026.10.06 / 상태: **주말 확인 예정**
+
+## 배경
+- 커뮤니티 글: 홀센서(위치)+로드셀(힘) 혼합 출력 상태라 브레이크 % 들쭉날쭉 → 로드셀 100%로 바꾸니 일관성 회복
+- 위치 센서는 자세·발 위치 따라 같은 힘에도 이동량이 달라져 출력 흔들림. 근육 기억은 "힘"이므로 힘 기준만 쓰는 게 맞음
+- mBOOSTER도 압력 센서 + 위치 센서 둘 다 있고, Pit House에 비율 설정 있음
+
+## 확인할 것
+| 순서 | 할 것 | 결과 |
+|---|---|---|
+| 1 | Pit House → mBooster → 브레이크 설정 → **Sensor Output Ratio** 현재 값 확인 | ☐ (현재: ___ ) |
+| 2 | **압력(Pressure/Force) 100%** 로 변경 | ☐ |
+| 3 | Starting Force(데드존) / Ending Force(100% 도달 힘)로 커브 재조정 | ☐ |
+| 4 | 후지 or 르망 프랙 몇 랩 돌려서 브레이크 % 트레이스 일관성 체크 | ☐ |
+
+## 출처
+- [MOZA mBooster Support](https://support.mozaracing.com/en/support/solutions/articles/70000672500-moza-mbooster-active-pedal-support)
+- [simracingcockpit.gg 리뷰](https://simracingcockpit.gg/mbooster-review-mozas-new-active-pedal/)
+- [simracerzone 리뷰](https://simracerzone.com/blogs/knowledge-base/moza-mbooster-active-pedal-review)
