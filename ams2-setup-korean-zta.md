@@ -42,4 +42,4 @@ ZTA 체크섬 확인 (PowerShell): `Get-FileHash .\ZTA_0.7.2_x64-setup.exe -Algo
 - 상세 체크리스트: `ams2-simhub-controlmapper-troubleshooting.md`
 
 ## 결과 기록
-- (숙소 테스트 후 기록)
+- 2026.10.07 3번 키매핑: vJoy 인식 OK. Steam 입력 비활성화 완료. Keyboard 스킴에서 메뉴 폭주(원인: vJoy 빈 축 → `ams2-simhub-controlmapper-troubleshooting.md` 참고). Controller 스킴 + vJoy 버튼은 정상. 본가에서 vJoy 축 제거 후 Custom 스킴으로 재검증 예정

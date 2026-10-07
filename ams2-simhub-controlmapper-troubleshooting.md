@@ -1,6 +1,6 @@
 # AMS2 + SimHub ControlMapper 키 매핑 안 먹을 때
 
-작성: 2026.10.06 / 상태: **주말 테스트 예정 (미해결)**
+작성: 2026.10.06 / 상태: **원인 확인(vJoy 빈 축) → 본가에서 축 제거 후 검증 예정**
 
 ## 증상
 - SimHub ControlMapper(vJoy)로 매핑한 버튼이 **Automobilista 2에서만** 인식 안 됨
@@ -12,6 +12,45 @@
 - **림 버튼·패들은 전부 SimHub ControlMapper → vJoy 경유** (SimuCUBE 직결 림 아님)
 - 매핑은 이미 Mapping Assistant(폰 QR)로 하고 있음 → LMU·ACC·iRacing 정상. 매핑 방식 자체는 문제 아님
 - → AMS2만 안 되는 원인은 아래 **4개 중 하나**일 가능성 큼
+
+## 🔎 2026.10.07 숙소 테스트 — 원인 거의 확정: vJoy 빈 축이 메뉴를 움직임
+
+### 증상 (숙소 PC, 리그 없이 vJoy만 연결)
+- vJoy 인식은 됨. 버튼 하나 매핑하는 순간 메뉴 방향키가 혼자 폭주. Alt+Tab 했다 돌아오면 잠깐 멈춤
+- Control Scheme **Keyboard / Keyboard+Mouse** 선택 시 발생. **Controller(게임패드)** 선택 + vJoy 버튼 매핑은 이상 없음
+- Steam 입력 비활성화는 해도 변화 없음 (원인 아님)
+
+### 숙소 PC에서 확인한 설정값
+- vJoy 2.1.9 (정상 버전). Device 1: **축 8개 전부 ON** (X/Y/Z/Rx/Ry/Rz/Slider/Dial), POV 0, 버튼 128, **FFB Effects ON**
+- SimHub ControlMapper Output mapping: **축 6개가 vJoy로 출력** (Clutch/Throttle/Brake/Handbrake + 빈 2개). 입력 장치 없음 → 값 0 = 한쪽 끝까지 밀린 상태로 게임에 전달
+- 연결된 컨트롤러: vJoy 하나뿐
+
+### 원인
+- **AMS2는 브레이크/스로틀 축을 메뉴 이동 키로도 씀** (Reiza 포럼 확인: 발을 페달에 살짝 올려만 둬도 메뉴 폭주, 브레이크 데드존 주니 해결)
+- vJoy의 Brake/Throttle 축이 끝에 붙어 있으니 "페달 밟은 채" 상태 → 메뉴 폭주. 매핑 화면에서는 버튼보다 밀린 축이 먼저 잡혀 매핑 오염
+- Keyboard 스킴 = 조이스틱 축을 날것으로 읽음 → 폭주. Controller 스킴 = 게임패드 데드존(~10%)·필터가 걸려 증상이 가려짐
+- Alt+Tab = DirectInput 장치 놓았다 다시 잡으면서 값 변할 때까지 무시 → 잠깐 멈춤
+- 클러치/스로틀/브레이크라는 이름은 SimHub 라벨일 뿐. 게임은 "vJoy 축 X/Y/Z…"로만 봄. 본가 페달은 mBooster 직결이라 이 축들은 실제로 안 씀
+
+### 해결 (본가에서 할 것)
+| 순서 | 할 것 | 결과 |
+|---|---|---|
+| 1 | SimHub 종료 | ☐ |
+| 2 | 관리자 PowerShell: `& "C:\Program Files\vJoy\x64\vJoyConfig.exe" 1 -f -b 128` (축 0·POV 0·버튼 128·FFB OFF). 또는 vJoyConf GUI에서 축 체크 전부 해제 + Enable Effects 해제 | ☐ |
+| 3 | SimHub → ControlMapper → Output mapping 의 축 항목 6개 삭제 | ☐ |
+| 4 | JoyMonitor.exe 로 vJoy에 축이 안 보이는지 확인 | ☐ |
+| 5 | AMS2(한글 런처) → Control Scheme **Custom** → 컨트롤 초기화 → 버튼 매핑 → 패들 맨 마지막 | ☐ |
+| 6 | AMS2 재시작 후 매핑 남아있는지 확인 | ☐ |
+
+**Controller 스킴으로 때우는 건 본가에선 비권장**: 게임패드 필터(센터 데드존·댐핑)가 SimuCUBE 스티어링에 걸릴 수 있고, 프리셋 스킴은 재시작 시 되돌아가는 사례 있음. 굳이 시험하려면 ① 스티어링 미세 조작에 바로 반응하는지 ② 재시작 후 매핑 유지되는지 두 가지만 체크.
+
+**추가 주의**: AMS2는 조이스틱당 **버튼 64개까지만** 인식한다는 보고 있음. ControlMapper는 0번부터 채우니 당장은 괜찮지만 시프트 조합으로 65번 이상 만들면 안 먹을 수 있음.
+
+### 출처
+- [Reiza 포럼 — Menu choices rapidly shift (브레이크 축이 메뉴 이동)](https://forum.reizastudios.com/threads/menu-choices-rapidly-shift-possibly-seeing-wheel-as-a-moving-mouse.14850/)
+- [Reiza 포럼 — vJoy not working (게임패드 인식·데드존·지연)](https://forum.reizastudios.com/threads/vjoy-not-working.10026/)
+- [Steam — Joystick button combinations (64버튼 제한)](https://steamcommunity.com/app/1066890/discussions/0/601894356967768113/)
+- [vJoy 포럼 — vJoy + Project Cars 2](https://vjoy.freeforums.net/thread/37/vjoy-project-cars-2-problem)
 
 ## 주말 확인 순서 (좁힌 것)
 | 순서 | 할 것 | 어디서 | 결과 |
