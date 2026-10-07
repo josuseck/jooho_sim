@@ -7,7 +7,23 @@
 - ACC · LMU · iRacing은 같은 세팅으로 정상 작동
 - → vJoy 버전·SimHub 권한 문제 아님. AMS2(Madness 엔진) 쪽 문제
 
-## 체크리스트 (이 순서로)
+## 내 환경 (2026.10.07 정리)
+- 스티어링 축: SimuCUBE 2 Pro / 페달 축: mBooster
+- **림 버튼·패들은 전부 SimHub ControlMapper → vJoy 경유** (SimuCUBE 직결 림 아님)
+- 매핑은 이미 Mapping Assistant(폰 QR)로 하고 있음 → LMU·ACC·iRacing 정상. 매핑 방식 자체는 문제 아님
+- → AMS2만 안 되는 원인은 아래 **4개 중 하나**일 가능성 큼
+
+## 주말 확인 순서 (좁힌 것)
+| 순서 | 할 것 | 어디서 | 결과 |
+|---|---|---|---|
+| 1 | Steam 입력 비활성화 | Steam → AMS2 우클릭 → 속성 → 컨트롤러 | ☐ |
+| 2 | 실행 순서: SimHub 먼저 → vJoy Monitor에서 버튼 들어오는지 확인 → AMS2 실행 | | ☐ |
+| 3 | Control Scheme = **Custom** | AMS2 Options → Controls → 맨 위 Control Scheme | ☐ |
+| 4 | 컨트롤 초기화 → 축 → 버튼 → **패들 맨 마지막** | Edit Assignments | ☐ |
+
+**Control Scheme이란**: Keyboard/패드/Simucube/Fanatec 등 장비별 프리셋. Simucube 프리셋 고른 상태로 vJoy 버튼 추가하면 저장 안 되거나 재시작 때 프리셋 값으로 되돌아가는 사례 있음. Custom = 전부 수동, 덮어쓰기 없음.
+
+## 전체 체크리스트 (원본)
 
 | 순서 | 할 것 | 방법 | 결과 |
 |---|---|---|---|
@@ -39,6 +55,13 @@
 
 ## 테스트 결과 기록
 - (주말 테스트 후 여기에 어떤 항목으로 해결됐는지 기록)
+
+## 참고 — AMS2 DLC 보유 현황 (2026.10.07 구매)
+- 본편 + Racin' USA + IMSA Track Pack + Endurance Pt1·2·3 + Lamborghini Pt1 + Premium Track Pack + Nürburgring 2025 (총 57,650원)
+- Nürburgring 2025 레이아웃: Nordschleife / GP / 24h / Touristenfahrten
+- 르망 트랙팩은 LMU로 대체, 안 삼
+- 차 추가 검토: Historical Endurance Pt1 (2005 LMP1/LMP2/GT1/GT2 11대, 패들 2대·시퀀셜 9대 → 패들로 그냥 탐. Auto Blip·Auto Clutch ON 권장)
+- 머스탱 GT3 휠(VPG Sim)은 가격 때문에 구매 안 함
 
 ---
 
