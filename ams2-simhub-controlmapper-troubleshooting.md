@@ -92,8 +92,11 @@
 - [note.com — vJoy + Control Mapper 가이드](https://note.com/hal_86_/n/nb2cc0157edf4?hl=en)
 - [SimHub Wiki — Games config and troubleshooting](https://github.com/SHWotever/SimHub/wiki/SimHub-Basics----Games-config-and-troubleshooting)
 
-## 테스트 결과 기록
-- (주말 테스트 후 여기에 어떤 항목으로 해결됐는지 기록)
+## 테스트 결과 기록 — ✅ 해결 (2026.10.19 확인)
+- **원인: Control Scheme이 Keyboard로 선택되어 있었음.** 키보드 프리셋 상태에서는 vJoy 버튼 입력을 받지 않음
+- 해결: AMS2 Options → Controls → 맨 위 Control Scheme을 키보드가 아닌 것(Custom/휠)으로 변경 → 매핑 정상
+- 즉 체크리스트 6번(Control Scheme)이 진짜 원인. Steam 입력·실행 순서·패들 순서는 이번 건과 무관
+- 👉 다음에 같은 증상 나오면 Control Scheme부터 볼 것
 
 ## 참고 — AMS2 DLC 보유 현황 (2026.10.07 구매)
 - 본편 + Racin' USA + IMSA Track Pack + Endurance Pt1·2·3 + Lamborghini Pt1 + Premium Track Pack + Nürburgring 2025 (총 57,650원)
@@ -106,7 +109,7 @@
 
 # [같이 확인] mBOOSTER 센서 출력 비율 — 브레이크 일관성
 
-작성: 2026.10.06 / 상태: **주말 확인 예정**
+작성: 2026.10.06 / 상태: **✅ 완료 (2026.10.19)** — 각도(위치) 센서 기준에서 **로드셀(힘) 100%** 로 전부 변경함
 
 ## 배경
 - 커뮤니티 글: 홀센서(위치)+로드셀(힘) 혼합 출력 상태라 브레이크 % 들쭉날쭉 → 로드셀 100%로 바꾸니 일관성 회복
@@ -116,8 +119,8 @@
 ## 확인할 것
 | 순서 | 할 것 | 결과 |
 |---|---|---|
-| 1 | Pit House → mBooster → 브레이크 설정 → **Sensor Output Ratio** 현재 값 확인 | ☐ (현재: ___ ) |
-| 2 | **압력(Pressure/Force) 100%** 로 변경 | ☐ |
+| 1 | Pit House → mBooster → 브레이크 설정 → **Sensor Output Ratio** 현재 값 확인 | ☑ 각도(위치) 기준이었음 |
+| 2 | **압력(로드셀/힘) 100%** 로 변경 | ☑ 2026.10.19 전부 변경 |
 | 3 | Starting Force(데드존) / Ending Force(100% 도달 힘)로 커브 재조정 | ☐ |
 | 4 | 후지 or 르망 프랙 몇 랩 돌려서 브레이크 % 트레이스 일관성 체크 | ☐ |
 
